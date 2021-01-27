@@ -1,0 +1,113 @@
+/*font-family: 'Archivo', sans-serif;*/
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+}
+div.menu{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 70px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: #EDDA14;
+}   
+    div.menu_icon img{
+        height: 100%;
+        color: white;
+    }
+div.logo_sector{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    div.logo_item{
+        text-align: right;
+    }
+        div.logo_item img{
+            width: 50%;
+        }
+div.main{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/main_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+div.info{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+    div.info_sub{
+
+    }
+        div.info_container{
+            display: grid;
+            grid-template-columns: 100%;
+            row-gap: 50px;
+        }
+            div.info_item{
+                padding: 0 20px;
+            }
+                div.info_item_top{
+                    border-bottom: 1px solid #bebebe;
+                }
+                    div.info_item_top img, div.info_item_top h2{
+                        display: inline-block;
+                    }
+                        div.info_item_top img{
+                            width: 30px;
+                            margin-left: 20px;
+                        }
+                        h2.info_title{
+                            color: #202528;
+                            font-weight: lighter;
+                            margin-left: 15px;
+                        }
+                div.info_item_body{
+                    color: #202528;
+                    margin-top: 20px;
+                    padding: 0 20px;
+                    font-size: 14px;
+                }
+                div.info_item_footer{
+                    margin-top: 20px;
+                    padding: 0 20px;
+                }
+                    div.info_item_footer button{
+                        width: 100%;
+                        padding: 15px 0;
+                        border: none;
+                        font-size: 22px;
+                        font-family: 'Archivo', sans-serif;
+                        background-color: #FFC113;
+                    }
+div.video{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+    div.video_sub{
+    }
+        div.video iframe{
+            width: 100%;
+        }
+div.footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #EEDA15;
+}
