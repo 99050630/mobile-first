@@ -1,29 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang='nl'>
     <head>
-        <title>Car meet</title>
+        <title>Rijschool website</title>
         <link rel="stylesheet" href="style/style.css">
-        <script src="script/script.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--De verbinding maken met google fonts om de font toetevoegen-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
     </head>
     <body>
-        <div class="menu">
-            <div class="menu_sub">
-                <div class="menu_icon">
-                    <img src="images/icons/menu.svg" alt="">
+        <div class="top">
+            <div class="top_sub">
+                <div class="top_container">
+                    <div class="top_item"><img src="images/icons/phone-solid.svg" alt=""> 0612345678</div>
+                    <div class="top_item"><img src="images/icons/whatsapp-brands.svg" alt=""> 0612345678</div>
+                    <div class="top_item"><img src="images/icons/clock-regular.svg" alt=""> Ma - Zo: 8:00 - 22:00</div>
+                    <div class="top_item"><img src="images/icons/tachometer-alt-solid.svg" alt=""> Dashboard</div>
+                    <div class="top_item">
+                        <img src="images/icons/facebook-square-brands.svg" alt="">
+                        <img src="images/icons/instagram-brands.svg" alt="">
+                        <img src="images/icons/twitter-square-brands.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="logo_sector">
-            <div class="logo_item">
-                <img src="images/logo.PNG" alt="">
+        <div class="menu">
+            <div class="menu_sub">
+                <div class="menu_icon">
+                    <img onclick="openMenu();" src="images/icons/menu.svg" alt="">
+                </div>
             </div>
         </div>
-        <div class="main"></div>
+        <div class="menu2">
+            <div class="menu2_sub">
+                <div class="logo_sector">
+                    <div class="logo_item">
+                        <img src="images/logo.PNG" alt="">
+                    </div>
+                </div>
+                <div id="menu2_container" style="display: grid;">
+                    <div class="menu2_item">AUTORIJBEWIJS</div>
+                    <div class="menu2_item">MOTORRIJEBWIJS</div>
+                    <div class="menu2_item">THEORIELES</div>
+                    <div class="menu2_item">OPFRIS CURSUS</div>
+                    <div class="menu2_item">CONTACT</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="main_sub">
+                <h1>Een rijschool</h1>
+                <p>Die meer dan alleen maar een rijschool is!</p>
+            </div>
+        </div>
         <div class="info">
             <div class="info_sub">
                 <div class="info_container">
@@ -70,5 +103,17 @@
                 <p>Jordan Bel 99050630</p>
             </div>
         </div>
+
+        <script>
+            var menuID = document.getElementById("menu2_container");
+            function openMenu(){
+                console.log(document.getElementById("menu2_container").style.display);
+                if(menuID.style.display == "none"){
+                    menuID.style.display = "grid";
+                }else{
+                    menuID.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
