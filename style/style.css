@@ -145,6 +145,8 @@ div.info{
                         font-size: 22px;
                         font-family: 'Archivo', sans-serif;
                         background-color: #FFC113;
+                        cursor: pointer;
+                        outline: none;
                     }
 div.video{
     position: relative;
